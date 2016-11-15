@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="dist/css/skins/skin-green.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,7 +47,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-green sidebar-mini">
 <div class="wrapper">
 
     <header class="main-header">
@@ -164,7 +164,7 @@ desired effect
             <ul class="sidebar-menu">
                 <li class="header">MAIN NAVIGATION</li>
                 <!-- Optionally, you can add icons to the links -->
-                <li class="active treeview"><a href="work.html"><i class="fa fa-th"></i> <span>Dashboard</span></a></li>
+                <li class="active treeview"><a href="work.html"><i class="fa fa-home"></i> <span>Home</span></a></li>
 
                 <li class="treeview">
                     <a href="#"><i class="fa fa-plus-square-o"></i> <span>Project Areas</span>
@@ -180,7 +180,19 @@ desired effect
                     </ul>
                 </li>
                 <li><a href="#"><i class="fa fa-maxcdn"></i> <span>In the Media</span></a></li>
-                <li><a href="#"><i class="fa fa-random"></i> <span>Area Activities</span></a></li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-plus-square-o"></i> <span>Areas Activities</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-female"></i>Makina</a></li>
+                        <li><a href="#"><i class="fa fa-female"></i>Sarangombe</a></li>
+                        <li><a href="#"><i class="fa fa-female"></i>Lindi</a></li>
+                        <li><a href="#"><i class="fa fa-female"></i>Laini Saba</a></li>
+                    </ul>
+                </li>
                 <li><a href="/pages/calendar.html"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
                 <li><a href="#"><i class="fa fa-envelope"></i> <span>Contact Us</span></a></li>
             </ul>
@@ -363,9 +375,10 @@ desired effect
                         <div class="box-body no-padding">
                             <div class="row">
                                 <div class="">
-                                    <div class="pad">
-                                        <img class="img-responsive" src="dist/img/map2.png" alt="Photo">
+                                    <div class="pad"  >
+
                                         <!-- Map will be created here -->
+                                        <iframe src="https://www.google.com/maps/embed/v1/place?q=Kibera+slum,+Nairobi,+Nairobi+County,+Kenya&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU" width="100%" height="450" frameborder="0" style="border:0"></iframe>
 
                                     </div>
                                 </div>
@@ -462,9 +475,127 @@ desired effect
                 <!-- /.col -->
             </div>
             <div class="row">
-                <div class="col-md- ">
+                <div class="col-md-">
 
-                    ///Try slide to go here
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box box-solid">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Quotes of the day</h3>
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <div class="box-group" id="accordion">
+                                        <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                                        <div class="panel box box-primary">
+                                            <div class="box-header with-border">
+                                                <h4 class="box-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                        Inspirational Quotes
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse in">
+                                                <div class="box-body">
+                                                    <blockquote>
+                                                        <p>"If you don't know the guy on the other side of the world, love him anyway because he's just like you. He has the same dreams, the same hopes and fears. It's one world, pal. We're all neighbors."</p>
+                                                        <small>Frank Sinatra<cite title="Source Title"></cite></small>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel box box-danger">
+                                            <div class="box-header with-border">
+                                                <h4 class="box-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                        Popular Quotes
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse">
+                                                <div class="box-body">
+                                                    <blockquote>
+                                                        <p>“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”</p>
+                                                        <small> Albert Einstein<cite title="Source Title"></cite></small>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel box box-success">
+                                            <div class="box-header with-border">
+                                                <h4 class="box-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                                      Motivational Quotes
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseThree" class="panel-collapse collapse">
+                                                <div class="box-body">
+                                                    <blockquote>
+                                                        <p>"The will to win, the desire to succeed, the urge to reach your full potential... these are the keys that will unlock the door to personal excellence"</p>
+                                                        <small>Confucius
+                                                            <cite title="Source Title"></cite></small>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-6">
+                            <div class="box box-solid">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Our Gallery</h3>
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <img src="dist/img/gallery.jpg" alt="First slide">
+
+                                                <div class="carousel-caption">
+                                                    WOMEN VOICES – ICT CHOICES MAKING ALL VOICES COUNT AWARD
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="dist/img/bio.png" alt="Second slide">
+
+                                                <div class="carousel-caption">
+                                                    HUMAN RIGHTS TO WATER AND SANITATION TRAINING
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="dist/img/jiko.jpg" alt="Third slide">
+
+                                                <div class="carousel-caption">
+                                                    SAFI E-COOKERS
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                            <span class="fa fa-angle-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                            <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
 
                     <!-- /.description-block -->
                 </div>
@@ -552,109 +683,42 @@ desired effect
     <aside class="control-sidebar control-sidebar-dark">
         <!-- Create the tabs -->
         <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-            <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+            <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
             <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
         </ul>
         <!-- Tab panes -->
         <div class="tab-content">
             <!-- Home tab content -->
-            <div class="tab-pane" id="control-sidebar-home-tab">
-                <h3 class="control-sidebar-heading">Recent Activity</h3>
+            <div class="tab-pane active" id="control-sidebar-home-tab">
+                <h3 class="control-sidebar-heading">Upcoming Activities</h3>
                 <ul class="control-sidebar-menu">
                     <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+                        <a href="javascript::;">
+                            <i class="menu-icon fa fa-users bg-red"></i>
 
                             <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+                                <h4 class="control-sidebar-subheading">Annual General Meeting</h4>
 
-                                <p>Will be 23 on April 24th</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon fa fa-user bg-yellow"></i>
-
-                            <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
-
-                                <p>New phone +1(800)555-1234</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
-
-                            <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
-
-                                <p>nora@example.com</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon fa fa-file-code-o bg-green"></i>
-
-                            <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
-
-                                <p>Execution time 5 seconds</p>
+                                <p>Will be held on November 24th at KICC starting from 10.00am </p>
                             </div>
                         </a>
                     </li>
                 </ul>
                 <!-- /.control-sidebar-menu -->
 
-                <h3 class="control-sidebar-heading">Tasks Progress</h3>
+                <h3 class="control-sidebar-heading">Elimu Grant target</h3>
                 <ul class="control-sidebar-menu">
                     <li>
-                        <a href="javascript:void(0)">
+                        <a href="javascript::;">
                             <h4 class="control-sidebar-subheading">
-                                Custom Template Design
-                                <span class="label label-danger pull-right">70%</span>
+                                Contributions
+                <span class="pull-right-container">
+                  <span class="label label-danger pull-right">70%</span>
+                </span>
                             </h4>
 
                             <div class="progress progress-xxs">
                                 <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Update Resume
-                                <span class="label label-success pull-right">95%</span>
-                            </h4>
-
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Laravel Integration
-                                <span class="label label-warning pull-right">50%</span>
-                            </h4>
-
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Back End Framework
-                                <span class="label label-primary pull-right">68%</span>
-                            </h4>
-
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
                             </div>
                         </a>
                     </li>
@@ -663,7 +727,9 @@ desired effect
 
             </div>
             <!-- /.tab-pane -->
-
+            <!-- Stats tab content -->
+            <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+            <!-- /.tab-pane -->
             <!-- Settings tab content -->
             <div class="tab-pane" id="control-sidebar-settings-tab">
                 <form method="post">
@@ -671,63 +737,13 @@ desired effect
 
                     <div class="form-group">
                         <label class="control-sidebar-subheading">
-                            Report panel usage
+                            Terms and Conditions Apply
                             <input type="checkbox" class="pull-right" checked>
                         </label>
 
                         <p>
-                            Some information about this general settings option
+                            By using this dashboard you accept our <a href="#"> Terms and Conditions</a>
                         </p>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Allow mail redirect
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-
-                        <p>
-                            Other sets of options are available
-                        </p>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Expose author name in posts
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-
-                        <p>
-                            Allow the user to show his name in blog posts
-                        </p>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <h3 class="control-sidebar-heading">Chat Settings</h3>
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Show me as online
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Turn off notifications
-                            <input type="checkbox" class="pull-right">
-                        </label>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Delete chat history
-                            <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
-                        </label>
                     </div>
                     <!-- /.form-group -->
                 </form>
@@ -764,5 +780,7 @@ desired effect
 <script src="dist/js/pages/dashboard2.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+<script src="dist/js/custom.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_yrA_S4al_EnJCgQgExDJxdCcQgzPeQU"></script>
 </body>
 </html>
