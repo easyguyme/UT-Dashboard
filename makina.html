@@ -27,7 +27,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-green sidebar-mini">
 <div class="wrapper">
 
     <header class="main-header">
@@ -423,7 +423,7 @@
 
             </div>
             <!-- /.row -->
-            <h2 class="page-header text-center">PROJECTS</h2>
+            <h2 class="page-header text-center"><dt>PROJECTS</dt></h2>
             <!-- Second row -->
             <div class="row">
                 <!-- Left col -->
@@ -657,13 +657,8 @@
                         <!-- /.box-body -->
                     </div>
                     <!-- /.box -->
-                    <div class="row">
-
-                        <!-- /.col -->
 
 
-                        <!-- /.col -->
-                    </div>
                     <!-- /.row -->
 
                     <!-- TABLE: LATEST ORDERS -->
@@ -931,6 +926,159 @@
                 </div>
                 <!-- /.col -->
             </div>
+            <h2 class="page-header text-center"><dt>PLANNED PROJECTS</dt></h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box box-success">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Project Priorities Graph</h3>
+
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-8">
+
+
+                                <div class="box-body">
+                                    <canvas id="pieChart" style="height:250px"></canvas>
+                                </div>
+
+
+                                <!-- ./chart-responsive -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-md-4">
+                                <ul class="chart-legend clearfix">
+                                    <li><i class="fa fa-circle-o text-red"></i>National Government</li>
+                                    <li><i class="fa fa-circle-o text-green"></i>County Government</li>
+                                    <li><i class="fa fa-circle-o text-yellow"></i> N.G.O Projects</li>
+                                    <li><i class="fa fa-circle-o text-aqua"></i>C.B.O Projects</li>
+                                    <li><i class="fa fa-circle-o text-light-blue"></i> E.B.O Projects</li>
+                                    <li><i class="fa fa-circle-o text-gray"></i>Others</li>
+                                </ul>
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.box-body -->
+                    <div class="box-footer no-padding">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">National Government
+                                <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12% Budget Decrease</span></a></li>
+                            <li><a href="#">County Government <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4% Budget Increase</span></a>
+                            </li>
+                            <li><a href="#">N.G.O Projects
+                                <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0% Budget Decrease</span></a></li>
+                            <li><a href="#">C.B.O Projects
+                                <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12% Budget Decrease</span></a></li>
+                            <li><a href="#">E.B.O Projects
+                                <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12% Budget Decrease</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- /.footer -->
+                </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="box box-success">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Project Priorities Information</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-md-8">
+
+                                    <div class="box-body">
+                                        <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-example-generic1" data-slide-to="1" class=""></li>
+                                                <li data-target="#carousel-example-generic1" data-slide-to="2" class=""></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <iframe width="300" height="300" src="https://www.youtube.com/embed/Qftj6MdENb8?list=UUOKQjR2yISKjRSLRq80K5aQ" frameborder="0" allowfullscreen></iframe>
+
+                                                    <div class="carousel-caption">
+                                                        First Slide
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="http://placehold.it/900x500/3c8dbc/ffffff&text=I+Love+Bootstrap" alt="Second slide">
+
+                                                    <div class="carousel-caption">
+                                                        Second Slide
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="http://placehold.it/900x500/f39c12/ffffff&text=I+Love+Bootstrap" alt="Third slide">
+
+                                                    <div class="carousel-caption">
+                                                        Third Slide
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                                <span class="fa fa-angle-left"></span>
+                                            </a>
+                                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                                <span class="fa fa-angle-right"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- ./chart-responsive -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-md-4">
+                                    <ul class="chart-legend clearfix">
+                                        <li><i class="fa fa-circle-o text-red"></i>National Government</li>
+                                        <li><i class="fa fa-circle-o text-green"></i>County Government</li>
+                                        <li><i class="fa fa-circle-o text-yellow"></i> N.G.O Projects</li>
+                                        <li><i class="fa fa-circle-o text-aqua"></i>C.B.O Projects</li>
+                                        <li><i class="fa fa-circle-o text-light-blue"></i> E.B.O Projects</li>
+                                        <li><i class="fa fa-circle-o text-gray"></i>Others</li>
+                                    </ul>
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer no-padding">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">National Government
+                                    <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12% Budget Decrease</span></a></li>
+                                <li><a href="#">County Government <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4% Budget Increase</span></a>
+                                </li>
+                                <li><a href="#">N.G.O Projects
+                                    <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0% Budget Decrease</span></a></li>
+                                <li><a href="#">C.B.O Projects
+                                    <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12% Budget Decrease</span></a></li>
+                                <li><a href="#">E.B.O Projects
+                                    <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12% Budget Decrease</span></a></li>
+                            </ul>
+                        </div>
+                        <!-- /.footer -->
+                    </div>
+                </div>
+            </div>
             <!-- /.row -->
         </section>
         <!-- /.content -->
@@ -938,11 +1086,12 @@
     <!-- /.content-wrapper -->
 
     <footer class="main-footer">
+        <!-- To the right -->
         <div class="pull-right hidden-xs">
-            <b>Version</b> 2.3.6
+            Developed by <a href="#">Mitchsofts</a>
         </div>
-        <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
-        reserved.
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2016 <a href="#">Umande Trust</a>.</strong> All rights reserved.
     </footer>
 
     <!-- Control Sidebar -->
@@ -1161,5 +1310,6 @@
 <script src="dist/js/pages/dashboard2.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+
 </body>
 </html>
