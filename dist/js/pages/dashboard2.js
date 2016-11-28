@@ -1,26 +1,5 @@
 $(function () {
-  /* ChartJS
-   * -------
-   * Here we will create a few charts using ChartJS
-   */
 
-  //--------------
-  //- AREA CHART -
-  //--------------
-
-  // Get context with jQuery - using jQuery's .get() method.
-
-
-
-
-
-
-  //Create the line chart
-
-
-  //-------------
-  //- LINE CHART -
-  //--------------
 
 
   //-------------
